@@ -4,16 +4,22 @@ window.addEventListener("DOMContentLoaded", event => {
         .then(data => {
         console.log(data);
         document.querySelector(".cat-pic").src = data.src;
-    })
+        })
+        .catch(handleError)
 });
+
+
 
 let button = document.getElementById('new-pic');
 button.addEventListener('click', event =>{
-    fetch('/kitten/image').then(res=>{
+    fetch('/kitten/image')
+        .then(res=>{
         return res.json();
-    }).then(data=>{
+        })
+        .then(data=>{
         document.querySelector('.cat-pic').src = data.src;
-    })
+        })
+        .catch(handleError)
 })
 
 const startLoading = () => {
@@ -31,4 +37,8 @@ const handleResponse = (res) =>{
         throw res;
     }
     return res.json();
+}
+
+const handleError = (error) => {
+    window.alert("Something went wrong. Please try again.")
 }
