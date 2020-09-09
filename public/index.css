@@ -3,6 +3,32 @@
   flex-direction: column;
   align-items: center;
   margin-top: 20px;
+  margin: auto;
+  width: 50%;
+  max-width: 500px;
+  background-color: pink;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.3);
+    
+    
+  -moz-box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
+  -webkit-box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
+  box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
+}
+
+body{
+  background-image: url("https://image.freepik.com/free-vector/cute-cat-paws-footprint-seamless-pattern-background_42349-730.jpg");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container:hover {
+  transition: 0.3s; 
+  -moz-box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
+  -webkit-box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
+  box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);
 }
 
 .comment-container {
@@ -21,6 +47,10 @@
 
 .cat-pic {
   margin: 20px;
+  max-width: 500px;
+  border-radius: 10px;
+  -moz-box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
+  -webkit-box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
 }
 
 .score-container {
