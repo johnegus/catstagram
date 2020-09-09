@@ -60,3 +60,19 @@ document.getElementById('downvote').addEventListener('click', downVote)
 
 let button = document.getElementById('new-pic');
 button.addEventListener('click', getImage);
+
+const commentForm = document.querySelector(".comment-form")
+commentForm.addEventListener("submit", event => {
+    event.preventDefault();
+    const formData = new FormData(form);
+    const comment = formData.get("user-comment");
+    fetch("/kitten/comments", { method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ comment })
+    })
+        .then(handleResponse)
+        .then(data => {
+            form.reset();
+            setComment(data);
+        })
+})
