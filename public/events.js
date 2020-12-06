@@ -25,7 +25,7 @@ const handleError = (error) => {
         })
     } else{
         console.error(error);
-        alert('SOmething went wrong.');
+        alert('Something went wrong.');
     }
 }
 
