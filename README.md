@@ -1,8 +1,11 @@
 # Catstagram
+# ![ERD](/public/cat.png)
 
-This is the starter project to help you learn how to use AJAX.
+This is the world famous Catstagram.
 
 1. Clone this respository
-   https://github.com/appacademy-starters/ajax-project-starter.
-1. Follow the associated directions in the course.
-1. See the cute kitties.
+2. npm install npm start
+3. See the cute kitties.
+
+
+# ![ERD](/screenshot.png)
