@@ -3,9 +3,10 @@
 
 This is the world famous Catstagram.
 
-1. Clone this respository
+1. clone this repository
+2. cd into the root folder
 2. npm install npm start
-3. See the cute kitties.
+3. see the cute kitties
 
 
 # ![ERD](/screenshot.png)
